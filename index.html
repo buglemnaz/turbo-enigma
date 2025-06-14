@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Başkent Hastanesi – Otobüs & Harita</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+  <div class="container">
+    <div class="lang-selector">
+      <button onclick="setLanguage('tr')">🇹🇷 TR</button>
+      <button onclick="setLanguage('en')">🇬🇧 EN</button>
+      <button onclick="setLanguage('de')">🇩🇪 DE</button>
+      <button onclick="setLanguage('ru')">🇷🇺 RU</button>
+    </div>
+    <h1 id="stop-name"></h1>
+    <p id="route"></p>
+    <div id="map"></div>
+    <p id="next-bus"></p>
+    <ul id="bus-times"></ul>
+  </div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
